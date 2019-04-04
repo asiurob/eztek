@@ -1,0 +1,270 @@
+<div id="header">
+  <div class="header-upper">
+    <div class="header-inner container">
+      <div class="header-block-flex order-1 mr-auto">
+        <nav class="nav nav-sm header-block-flex">
+          <a class="nav-link d-md-none" href="login.html"><i class="fa fa-user"></i></a>  
+          <div class="header-divider header-divider-sm"></div>
+          <a class="nav-link text-xs text-uppercase d-none d-md-block" href="#login-modal" data-toggle="modal">
+            Ingresar</a>
+        </nav>
+        
+      </div>
+      <!--social media icons-->
+      <div class="nav nav-icons header-block order-12">
+        <!--@todo: replace with company social media details-->
+        <a href="#" class="nav-link text-info mr-3"> 
+          <i class="fab fa-twitter-square"></i> 
+            <span class="sr-only">Twitter</span>
+        </a>
+        <a href="#" class="nav-link text-info mr-3"> 
+          <i class="fab fa-facebook-square"></i> 
+          <span class="sr-only">Facebook</span> 
+        </a>
+        <a href="#" class="nav-link text-info mr-3">
+          <i class="fab fa-linkedin"></i> 
+          <span class="sr-only">Linkedin</span> 
+        </a>
+      </div>
+    </div>
+  </div>
+  <div data-toggle="sticky">
+
+    <!--Header & Branding region-->
+    <div class="header">
+      <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.html) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+      <div class="header-inner container">
+        <div class="header-brand">
+          <a class="header-brand-text" [routerLink]="[ '/' ]" title="Inicio">
+            <h1 class="h2">
+              <img src="./assets/images/logo.png" width="200">
+            </h1>
+          </a>
+        </div>
+        <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" 
+          data-toggle="off-canvas" data-target=".navbar-main" 
+          data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> 
+          <i class="fa fa-bars"></i> 
+        </a>
+        <div class="navbar navbar-expand-md navbar-static-top">
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-main collapse">
+            <!--main navigation-->
+            <ul class="nav navbar-nav navbar-nav-stretch float-lg-right dropdown-effect-fade">
+
+              <!-- Mega menu example -->
+              <li class="nav-item dropdown dropdown-persist dropdown-mega-menu dropdown-mega-menu-50">
+                <a href="#" class="nav-link dropdown-toggle" id="megamenu-drop" data-toggle="dropdown"
+                  data-hover="dropdown">Odoo</a>
+                <!-- Dropdown Menu - Mega Menu -->
+                <div class="dropdown-menu dropdown-menu-right">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-pills nav-pills-border-bottom-inside flex-column flex-lg-row" role="tablist">
+                    <li class="nav-item"> <a class="nav-link p-3 active text-center font-weight-bold text-uppercase"
+                        data-toggle="tab" data-target=".menu-tab-1" role="tab">Mega Menu Tab 1</a> </li>
+                    <li class="nav-item"> <a class="nav-link p-3 text-center font-weight-bold text-uppercase"
+                        data-toggle="tab" data-target=".menu-tab-2" role="tab">Mega Menu Tab 2</a> </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content py-3">
+                    <div class="tab-pane active show menu-tab-1" role="tabpanel">
+                      <div class="row text-center">
+                        <div class="col-lg-4 py-2">
+                          <i class="fa fa-tachometer-alt icon-3x op-6"></i>
+                          <h5 class="mt-2">
+                            Fully Optimized
+                          </h5>
+                          <p class="text-sm mb-0">Aliquam distineo interdico praemitto probo sino.</p>
+                        </div>
+                        <div class="col-lg-4 py-2">
+                          <i class="fa fa-wrench icon-3x op-6"></i>
+                          <h5 class="mt-2">
+                            Free Support
+                          </h5>
+                          <p class="text-sm mb-0">Augue bene imputo metuo nobis proprius sit suscipit tego tum.</p>
+                        </div>
+                        <div class="col-lg-4 py-2">
+                          <i class="fa fa-rocket icon-3x op-6"></i>
+                          <h5 class="mt-2">
+                            Free Upgrades
+                          </h5>
+                          <p class="text-sm mb-0">Ad hos iusto letalis natu proprius ullamcorper vereor vindico
+                            volutpat.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane menu-tab-2" role="tabpanel">
+                      <div class="row text-center">
+                        <div class="col-lg-4 py-2">
+                          <i class="fa fa-chart-line icon-3x op-6"></i>
+                          <h5 class="mt-2">
+                            99.9% Uptime
+                          </h5>
+                          <p class="text-sm mb-0">Adipiscing comis commodo eu quibus typicus utinam velit virtus vulpes.
+                          </p>
+                        </div>
+                        <div class="col-lg-4 py-2">
+                          <i class="fa fa-users icon-3x op-6"></i>
+                          <h5 class="mt-2">
+                            Multiuser
+                          </h5>
+                          <p class="text-sm mb-0">Abigo facilisis neque sed.</p>
+                        </div>
+                        <div class="col-lg-4 py-2">
+                          <i class="fa fa-plug icon-3x op-6"></i>
+                          <h5 class="mt-2">
+                            Plug n play
+                          </h5>
+                          <p class="text-sm mb-0">Commoveo incassum praesent vero.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-persist dropdown-mega-menu dropdown-mega-menu-50">
+                  <a href="#" class="nav-link dropdown-toggle" id="megamenu-drop" data-toggle="dropdown"
+                    data-hover="dropdown">Telecomunicaciones</a>
+                  <!-- Dropdown Menu - Mega Menu -->
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills nav-pills-border-bottom-inside flex-column flex-lg-row" role="tablist">
+                      <li class="nav-item"> <a class="nav-link p-3 active text-center font-weight-bold text-uppercase"
+                          data-toggle="tab" data-target=".menu-tab-1" role="tab">Mega Menu Tab 1</a> </li>
+                      <li class="nav-item"> <a class="nav-link p-3 text-center font-weight-bold text-uppercase"
+                          data-toggle="tab" data-target=".menu-tab-2" role="tab">Mega Menu Tab 2</a> </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content py-3">
+                      <div class="tab-pane active show menu-tab-1" role="tabpanel">
+                        <div class="row text-center">
+                          <div class="col-lg-4 py-2">
+                            <i class="fa fa-tachometer-alt icon-3x op-6"></i>
+                            <h5 class="mt-2">
+                              Fully Optimized
+                            </h5>
+                            <p class="text-sm mb-0">Aliquam distineo interdico praemitto probo sino.</p>
+                          </div>
+                          <div class="col-lg-4 py-2">
+                            <i class="fa fa-wrench icon-3x op-6"></i>
+                            <h5 class="mt-2">
+                              Free Support
+                            </h5>
+                            <p class="text-sm mb-0">Augue bene imputo metuo nobis proprius sit suscipit tego tum.</p>
+                          </div>
+                          <div class="col-lg-4 py-2">
+                            <i class="fa fa-rocket icon-3x op-6"></i>
+                            <h5 class="mt-2">
+                              Free Upgrades
+                            </h5>
+                            <p class="text-sm mb-0">Ad hos iusto letalis natu proprius ullamcorper vereor vindico
+                              volutpat.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane menu-tab-2" role="tabpanel">
+                        <div class="row text-center">
+                          <div class="col-lg-4 py-2">
+                            <i class="fa fa-chart-line icon-3x op-6"></i>
+                            <h5 class="mt-2">
+                              99.9% Uptime
+                            </h5>
+                            <p class="text-sm mb-0">Adipiscing comis commodo eu quibus typicus utinam velit virtus vulpes.
+                            </p>
+                          </div>
+                          <div class="col-lg-4 py-2">
+                            <i class="fa fa-users icon-3x op-6"></i>
+                            <h5 class="mt-2">
+                              Multiuser
+                            </h5>
+                            <p class="text-sm mb-0">Abigo facilisis neque sed.</p>
+                          </div>
+                          <div class="col-lg-4 py-2">
+                            <i class="fa fa-plug icon-3x op-6"></i>
+                            <h5 class="mt-2">
+                              Plug n play
+                            </h5>
+                            <p class="text-sm mb-0">Commoveo incassum praesent vero.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown dropdown-persist dropdown-mega-menu dropdown-mega-menu-50">
+                    <a href="#" class="nav-link dropdown-toggle" id="megamenu-drop" data-toggle="dropdown"
+                      data-hover="dropdown">Desarrollo web</a>
+                    <!-- Dropdown Menu - Mega Menu -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-pills nav-pills-border-bottom-inside flex-column flex-lg-row" role="tablist">
+                        <li class="nav-item"> <a class="nav-link p-3 active text-center font-weight-bold text-uppercase"
+                            data-toggle="tab" data-target=".menu-tab-1" role="tab">Mega Menu Tab 1</a> </li>
+                        <li class="nav-item"> <a class="nav-link p-3 text-center font-weight-bold text-uppercase"
+                            data-toggle="tab" data-target=".menu-tab-2" role="tab">Mega Menu Tab 2</a> </li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content py-3">
+                        <div class="tab-pane active show menu-tab-1" role="tabpanel">
+                          <div class="row text-center">
+                            <div class="col-lg-4 py-2">
+                              <i class="fa fa-tachometer-alt icon-3x op-6"></i>
+                              <h5 class="mt-2">
+                                Fully Optimized
+                              </h5>
+                              <p class="text-sm mb-0">Aliquam distineo interdico praemitto probo sino.</p>
+                            </div>
+                            <div class="col-lg-4 py-2">
+                              <i class="fa fa-wrench icon-3x op-6"></i>
+                              <h5 class="mt-2">
+                                Free Support
+                              </h5>
+                              <p class="text-sm mb-0">Augue bene imputo metuo nobis proprius sit suscipit tego tum.</p>
+                            </div>
+                            <div class="col-lg-4 py-2">
+                              <i class="fa fa-rocket icon-3x op-6"></i>
+                              <h5 class="mt-2">
+                                Free Upgrades
+                              </h5>
+                              <p class="text-sm mb-0">Ad hos iusto letalis natu proprius ullamcorper vereor vindico
+                                volutpat.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane menu-tab-2" role="tabpanel">
+                          <div class="row text-center">
+                            <div class="col-lg-4 py-2">
+                              <i class="fa fa-chart-line icon-3x op-6"></i>
+                              <h5 class="mt-2">
+                                99.9% Uptime
+                              </h5>
+                              <p class="text-sm mb-0">Adipiscing comis commodo eu quibus typicus utinam velit virtus vulpes.
+                              </p>
+                            </div>
+                            <div class="col-lg-4 py-2">
+                              <i class="fa fa-users icon-3x op-6"></i>
+                              <h5 class="mt-2">
+                                Multiuser
+                              </h5>
+                              <p class="text-sm mb-0">Abigo facilisis neque sed.</p>
+                            </div>
+                            <div class="col-lg-4 py-2">
+                              <i class="fa fa-plug icon-3x op-6"></i>
+                              <h5 class="mt-2">
+                                Plug n play
+                              </h5>
+                              <p class="text-sm mb-0">Commoveo incassum praesent vero.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
