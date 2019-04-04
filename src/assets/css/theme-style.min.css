@@ -17003,7 +17003,7 @@ body.animates-pending [data-animate].animated-done {
 
 .timeline {
   list-style: none;
-  background-image: url(../img/misc/bg_timeline-line.png);
+  
   background-repeat: repeat-y;
   background-position: center top;
   padding: 0;
@@ -17016,7 +17016,7 @@ all and (-o-min-device-pixel-ratio:3 / 2),
 all and (min--moz-device-pixel-ratio:1.5),
 all and (min-device-pixel-ratio:1.5) {
   .timeline {
-    background-image: url(../img/misc/bg_timeline-line@2x.png);
+    
     background-size: 2px auto
   }
 }
@@ -19374,7 +19374,7 @@ a.text-hover-brand-whatsapp:hover {
 .title-divider {
   text-align: left;
   margin-bottom: 1em;
-  background: url(../img/bg_divider.png) left center repeat-x;
+  
   padding: 0
 }
 
